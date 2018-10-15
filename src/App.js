@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
+import ProductList from './components/ProductList';
+import ShoppingCart from './components/ShoppingCart';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faShoppingBag, faShoppingCart, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+
+library.add(faShoppingBag, faShoppingCart, faTrashAlt);
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <header className="app-header">
+            <img src={ logo } className="app-logo" alt="logo" />
+            <h1>React & Redux Shop</h1>
+          </header>
+          <main>
+            <section>
+              <ProductList />
+            </section>
+            <aside>
+              <ShoppingCart />
+            </aside>
+          </main>
       </div>
     );
   }

@@ -1,0 +1,7 @@
+{
+  "products": [
+    { "id": 1, "name": "Hipster Ultimate1", "price": 299, "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" },
+    { "id": 2, "name": "Underground Max1", "price": 149, "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg" },
+    { "id": 3, "name": "Aerosmith", "price": 249, "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg" }
+]
+}
